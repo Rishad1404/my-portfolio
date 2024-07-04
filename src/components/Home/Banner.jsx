@@ -20,7 +20,7 @@ const Banner = () => {
                 <div className="flex flex-col justify-center lg:h-full p-4 rounded-lg">
                     <h1 className="text-3xl font-bold md:text-6xl lg:text-7xl text-gray-900">
                         I am{' '}
-                        <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                        <span className="bg-gradient-to-r from-cyan-500 via-cyan-400 to-blue-200 inline-block text-transparent bg-clip-text">
                             {text}
                             <Cursor cursorColor="black" />
                         </span>
@@ -28,8 +28,8 @@ const Banner = () => {
                     <p className="text-gray-900 lg:text-xl py-4 lg:max-w-2xl">
                         Hi there! I am a passionate junior front-end developer with a strong foundation in HTML, CSS, JavaScript, and React. I love crafting clean, responsive, and user-friendly web interfaces. I'm a quick learner, always eager to expand my skill set and tackle new challenges. With a keen eye for design and attention to detail, I strive to create visually appealing and functional websites.
                     </p>
-                    <Link  to='portfolio' smooth duration={500} className="btn btn-ghost group text-white text-lg w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
-                        Portfolio <span className="group-hover:rotate-90 duration-300"><MdArrowForwardIos size={20} className="ml-1" /></span>
+                    <Link  to='projects' smooth duration={500} className="btn btn-ghost group text-white text-lg w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
+                        My Projects <span className="group-hover:rotate-90 duration-300"><MdArrowForwardIos size={20} className="ml-1" /></span>
                     </Link>
                     <a href="/Resume.pdf" download className=" text-white text-lg w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
                         Download Resume <span><FaDownload size={20} className="ml-1" /></span>

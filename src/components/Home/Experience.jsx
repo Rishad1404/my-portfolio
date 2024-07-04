@@ -6,6 +6,7 @@ import mongodb from "../../assets/mongodb.png";
 import firebase from "../../assets/firebase.png";
 import github from "../../assets/github.png";
 import tailwind from "../../assets/tailwind.png";
+import express from "../../assets/express.png";
 const Experience = () => {
 
     const techs = [
@@ -57,12 +58,18 @@ const Experience = () => {
             title: "FIREBASE",
             style: 'shadow-yellow-700'
         },
+        {
+            id: 9,
+            src: express,
+            title: "EXPRESS",
+            style: 'shadow-gray-700'
+        },
     ]
 
     return (
         <div name='experience' className="container mx-auto mt-20 lg:mt-56 md:mt-40">
             <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
-                <div className="">
+                <div className=" mb-6 md:mb-10 lg:mb-20">
                     <p className="text-6xl font-bold text-center">Experience</p>
                     <p className="py-4 text-center">Technologies I've worked with</p>
                 </div>
@@ -72,7 +79,7 @@ const Experience = () => {
                 {
                     techs.map(({ id, src, title, style }) => (
                         <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                            <img src={src} alt="" className="w-44 h-36 mx-auto" />
+                            <img src={src} alt="" className="w-36 h-40 mx-auto" />
                             <p className="mt-2 text-center">{title}</p>
                         </div>
                     ))

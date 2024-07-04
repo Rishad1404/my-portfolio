@@ -4,13 +4,13 @@ const Contact = () => {
             <div className="flex flex-col p-4 justify-center container mx-auto h-full">
                 <div className="mb-20">
                     <p className="text-center text-5xl font-bold text-gray-800">Contact</p>
-                    <p className="text-center font-light mt-2 text-gray-600">Submit the form below to get in touch with me</p>
+                    <p className="text-center font-light mt-2 text-black">Submit the form below to get in touch with me</p>
                 </div>
                 <div className="flex justify-center items-center">
                     <form 
                         action="https://getform.io/f/bxojjjpa" 
                         method="POST" 
-                        className="flex flex-col w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg"
+                        className="flex flex-col w-full md:w-1/2  p-8 rounded-lg shadow-lg"
                     >
                         <input 
                             type="text" 
