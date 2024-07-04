@@ -1,35 +1,44 @@
 const Contact = () => {
     return (
-        <section id="contact" className="py-12">
-            <div className="container mx-auto">
-                <div className="text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Contact
-                    </h2>
-                    <p className="text-xl text-gray-700 mb-8">
-                        Email: your.email@example.com
-                    </p>
-                    <div className="flex justify-center">
-                        <a
-                            href="https://www.linkedin.com/yourprofile"
-                            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg mr-4"
-                            target="_blank"
-                            rel="noopener noreferrer"
+        <div name="contact" className="w-full h-screen bg-gray-100 flex items-center justify-center">
+            <div className="flex flex-col p-4 justify-center container mx-auto h-full">
+                <div className="mb-20">
+                    <p className="text-center text-5xl font-bold text-gray-800">Contact</p>
+                    <p className="text-center font-light mt-2 text-gray-600">Submit the form below to get in touch with me</p>
+                </div>
+                <div className="flex justify-center items-center">
+                    <form 
+                        action="https://getform.io/f/bxojjjpa" 
+                        method="POST" 
+                        className="flex flex-col w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg"
+                    >
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="Enter your name" 
+                            className="p-3 mb-4 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            className="p-3 mb-4 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <textarea 
+                            name="message" 
+                            rows="10" 
+                            placeholder="Enter your message"
+                            className="p-3 mb-4 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        ></textarea>
+                        <button 
+                            className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 mt-4 mx-auto flex items-center rounded-md hover:scale-105 transform transition-transform duration-300 shadow-lg"
                         >
-                            LinkedIn
-                        </a>
-                        <a
-                            href="https://github.com/yourusername"
-                            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-full shadow-lg"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>
-                    </div>
+                            Let's Talk
+                        </button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

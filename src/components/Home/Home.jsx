@@ -1,8 +1,10 @@
+
 import SocialLinks from "../SocialLinks";
 import About from "./About";
 import Banner from "./Banner";
 import Contact from "./Contact";
-import Portfolio from "./Portfolio";
+import Experience from "./Experience";
+import Projects from "./Projects";
 
 
 const Home = () => {
@@ -11,7 +13,8 @@ const Home = () => {
             <Banner/>
             <SocialLinks/>
             <About/>
-            <Portfolio/>
+            <Projects/>
+            <Experience/>
             <Contact/>
         </div>
     );
