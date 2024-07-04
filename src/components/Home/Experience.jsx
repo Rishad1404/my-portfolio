@@ -60,7 +60,7 @@ const Experience = () => {
     ]
 
     return (
-        <div name='experience' className="container mx-auto">
+        <div name='experience' className="container mx-auto mt-20 lg:mt-56 md:mt-40">
             <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
                 <div className="">
                     <p className="text-6xl font-bold text-center">Experience</p>

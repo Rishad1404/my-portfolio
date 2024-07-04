@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="container mx-auto py-10" id="about">
+        <div className="container mx-auto lg:py-10" id="about">
             <p className="text-center font-light mb-2">Get To Know More</p>
             <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center">About Me</h2>
             <div className="flex flex-col md:flex-row items-center justify-center px-4">
@@ -21,6 +21,26 @@ const About = () => {
                     <p className="mt-4 text-lg leading-relaxed">
                         In addition to my technical skills, I am a strong communicator and work well in team settings. I am always open to new challenges and opportunities to grow. Let's connect and create something amazing together!
                     </p>
+                    <div className="mt-12">
+                        <h3 className="text-3xl font-bold mb-6 text-center text-cyan-600">Education</h3>
+                        <div className="flex flex-col md:flex-row items-center">
+                            <div className="w-full md:w-1/3 flex justify-center mb-6 md:mb-0">
+                                <img
+                                    src='https://i.ibb.co/XpRj1GD/png-transparent-study-skills-education-learning-computer-icons-sc-logo-angle-hat-teacher.png'
+                                    alt="University Logo"
+                                    className="w-24 h-24 md:w-36 md:h-36 rounded-full shadow-lg bg-slate-100 p-2"
+                                />
+                            </div>
+                            <div className="w-full md:w-2/3 md:ml-6 text-center md:text-left border-2 p-6 rounded-lg bg-white shadow-lg">
+                                <h4 className="text-2xl font-bold">B.Sc. in Computer Science and Engineering</h4>
+                                <p className="mt-2 text-lg font-semibold">Bangladesh Army University of Science and Technology</p>
+                                <p className="mt-2 text-lg leading-relaxed">Graduation: Expected in 2026</p>
+                                <p className="mt-2 text-lg leading-relaxed">
+                                    Relevant Courses: Data Structures, Algorithms, Web Development, Database Management, Software Engineering
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

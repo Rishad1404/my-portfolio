@@ -44,21 +44,21 @@ const Projects = () => {
     ]
 
     return (
-        <div>
-            <div className="container mx-auto  lg:mt-56">
+        <div name='projects'>
+            <div className="container mx-auto mt-24 lg:mt-56">
                 <p className="text-center text-5xl font-bold">My Projects</p>
                 <p className="text-center font-light mt-2">Check out some of my work right here</p>
 
                 <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
                         projects.map((project) => (
-                            <div key={project.id} className="rounded-lg bg-white shadow-lg overflow-hidden">
+                            <div key={project.id} className="rounded-lg mx-4 bg-white shadow-lg overflow-hidden">
                                 <figure className="relative">
                                     <img
                                         src={project.image}
                                         alt={project.projectName}
                                         className="w-full h-auto"
-                                        style={{ height: '300px' }}
+                                        style={{ height: '250px' }}
                                     />
                                 </figure>
                                 <div className="p-6">
@@ -88,7 +88,7 @@ const Projects = () => {
                                                 href={project.githubClient}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 py-2 px-4 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
+                                                className="flex items-center gap-2 py-3 px-2 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
                                             >
                                                 <FaGithub /> Client Repo
                                             </a>
@@ -96,7 +96,7 @@ const Projects = () => {
                                                 href={project.githubServer}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 py-2 px-4 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
+                                                className="flex items-center gap-1 py-3 px-2 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
                                             >
                                                 <LuServerCog /> Server Repo
                                             </a>
