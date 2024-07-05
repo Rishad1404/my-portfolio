@@ -16,7 +16,7 @@ const Banner = () => {
 
     return (
         <div name="banner">
-            <div className="container mx-auto md:py-20 lg:py-32 lg:flex flex-col h-screen items-center justify-between px-4 md:flex-row gap-10">
+            <div className="container mx-auto md:py-20 lg:py-32 my-14 lg:my-32 lg:flex flex-col items-center justify-between px-4 md:flex-row gap-10">
                 <div className="flex flex-col justify-center lg:h-full p-4 rounded-lg">
                     <h1 className="text-3xl font-bold md:text-6xl lg:text-7xl text-gray-900">
                         I am{' '}

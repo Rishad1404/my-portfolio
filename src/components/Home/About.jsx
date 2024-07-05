@@ -12,14 +12,14 @@ const About = () => {
                             className="w-48 h-48 md:w-80 md:h-80 rounded-full shadow-lg bg-slate-100 p-2"
                         />
                     </div>
-                    <div className="w-full md:w-2/3 md:ml-6 text-center md:text-left border-2 p-6 rounded-lg font-semibold shadow-lg">
-                        <p className="text-lg leading-relaxed">
+                    <div className="w-full md:w-2/3 md:ml-6 text-center md:text-left border-2 p-6 rounded-lg md::font-semibold shadow-lg">
+                        <p className="md::text-lg leading-relaxed">
                             Hello! I'm Rishad Islam, a passionate web developer with a knack for creating elegant and efficient solutions. I have a strong background in frontend and backend development, and I'm constantly seeking to learn and implement the latest technologies to enhance my skill set.
                         </p>
-                        <p className="mt-4 text-lg leading-relaxed">
+                        <p className="mt-4 md::text-lg leading-relaxed">
                             With a solid foundation in HTML, CSS, JavaScript, and React, I build responsive and user-friendly interfaces. On the backend, I work with Node.js, Express, and MongoDB to create robust and scalable applications. I enjoy problem-solving and am dedicated to delivering high-quality code.
                         </p>
-                        <p className="mt-4 text-lg leading-relaxed">
+                        <p className="mt-4 md::text-lg leading-relaxed">
                             In addition to my technical skills, I am a strong communicator and work well in team settings. I am always open to new challenges and opportunities to grow. Let's connect and create something amazing together!
                         </p>
                     </div>

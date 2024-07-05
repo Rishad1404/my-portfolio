@@ -62,7 +62,7 @@ const Projects = () => {
                                     />
                                 </figure>
                                 <div className="p-6">
-                                    <div className="h-80 mb-5">
+                                    <div className="md::h-80 mb-5">
                                         <h2 className="text-2xl font-bold text-gray-800 mb-2">{project.projectName}</h2>
                                         <p className="text-base text-gray-700 mb-4">{project.description}</p>
                                         <div className="mb-4">
@@ -74,7 +74,7 @@ const Projects = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="flex justify-center flex-grow">
+                                    <div className="flex justify-center">
                                         <div className="flex space-x-4">
                                             <a
                                                 href={project.website}
