@@ -52,21 +52,22 @@ const Projects = () => {
                 <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
                         projects.map((project) => (
-                            <div key={project.id} className="rounded-lg mx-4 bg-white shadow-lg overflow-hidden">
+                            <div key={project.id} className="rounded-lg mx-4 bg-gradient-to-r from-white to-gray-100 shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                                 <figure className="relative">
                                     <img
                                         src={project.image}
                                         alt={project.projectName}
-                                        className="w-full h-auto"
-                                        style={{ height: '250px' }}
+                                        className="w-full h-64 object-cover"
                                     />
                                 </figure>
-                                <div className="p-6">
-                                    <div className="md::h-80 mb-5">
+                                <div className="p-6 bg-white bg-opacity-90 backdrop-blur-lg">
+                                    <div className="md:h-80 mb-5">
                                         <h2 className="text-2xl font-bold text-gray-800 mb-2">{project.projectName}</h2>
                                         <p className="text-base text-gray-700 mb-4">{project.description}</p>
                                         <div className="mb-4">
-                                            <p className="font-semibold  text-gray-800 flex items-center gap-2"><MdOutlineFeaturedPlayList /> Features:</p>
+                                            <p className="font-semibold text-gray-800 flex items-center gap-2">
+                                                <MdOutlineFeaturedPlayList /> Features:
+                                            </p>
                                             <ul className="list-disc list-inside text-sm text-gray-700">
                                                 {project.features.map((feature, index) => (
                                                     <li key={index}>{feature}</li>
@@ -80,30 +81,32 @@ const Projects = () => {
                                                 href={project.website}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="py-2 px-4 text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-lg shadow-md  transition duration-300 flex items-center gap-2 hover:shadow-lg"
+                                                className="py-2 px-4 text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-lg shadow-md transition duration-300 flex items-center gap-2 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-cyan-500 hover:shadow-lg"
                                             >
-                                                <CgWebsite /> Visit Website
+                                                <CgWebsite className="text-4xl"/> Visit Website
                                             </a>
                                             <a
                                                 href={project.githubClient}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 py-3 px-2 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
+                                                className="flex items-center gap-2 py-2 px-4 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
                                             >
-                                                <FaGithub /> Client Repo
+                                                <FaGithub className="text-4xl"/> Client Repo
                                             </a>
                                             <a
                                                 href={project.githubServer}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-1 py-3 px-2 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
+                                                className="flex items-center gap-2 py-2 px-4 text-sm font-medium text-gray-700 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-300 hover:shadow-md"
                                             >
-                                                <LuServerCog /> Server Repo
+                                                <LuServerCog className="text-4xl"/> Server Repo
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
                         ))
                     }
 
